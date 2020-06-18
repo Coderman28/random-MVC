@@ -12,9 +12,23 @@ namespace RANDOM_MVC
 {
     public partial class Form1 : Form
     {
+
+        
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            randomGenerotor generator = new randomGenerotor(text, button, 0, 100);
+            generator.ChangeText();
         }
     }
 }
